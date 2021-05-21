@@ -13,13 +13,16 @@ const GifExpertApp = () => {
     //     const newName = 'Pikachu';
     //     if (!categories.includes(newName)) {
     //         setCategories( [...categories, newName] );
+    //         //Otra forma
+    //         setCategories( cats => [..cats, newName]);
     //     }
     // };
+
 
     return (
         <>
             <h2>GifExpertApp</h2>
-            <AddCategory/>
+            <AddCategory setCategories={setCategories}/>
             <hr />
 
             <ol>
